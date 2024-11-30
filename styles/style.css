@@ -1,1 +1,272 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 92px 24px 92px 24px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 31.5px;
+  font-size: 18px;
+  line-height: 21.13px;
+  padding-left: 26.5px;
+}
+
+.header__links-list-item_no-bullet,
+.footer__menu-list,
+.footer__social-list-item {
+  list-style: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.header__address {
+  justify-self: end;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  padding-right: 62px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.cover {
+  position: relative;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgb(0 0 0 / .6);
+  z-index: -1;
+  inset: 0;
+}
+
+.cover__title {
+  padding: 165px 50px 127px 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 100px;
+  color: white; 
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+  display: block;
+  line-height: 115px;
+  padding-bottom: 6.5px;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  line-height: 125px;
+  padding-right: 26px;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 51px 78px;
+}
+
+.cover__description-text {
+  word-spacing: 18.6px;
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  background-color: transparent;
+  font-size: 22px;
+  color: white;
+  border: solid 1px white;
+  text-transform: uppercase;
+  padding: 12px 32px 11px 31px;
+}
+
+.lots {
+  padding: 179px 24px 146px 24px;
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.lots__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+  padding: 0 0 27px 40px;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  line-height: 23.5px;
+  padding-left: 40px;
+}
+
+.lots__card-list-item {
+  list-style: none;
+  min-height: 563px;
+  width: 334px;
+  padding-bottom: 30px;
+}
+
+.card__title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-decoration: underline;
+}
+
+.card__text {
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 51px 40px 48px 40px;
+  position: relative;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  padding: 0 24px 180px 24px;
+  display: grid;
+  grid-template-columns: 47px min-content 72px 1fr;
+  grid-template-rows: 35px min-content min-content min-content;
+}
+
+.about__logo {
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  justify-self: center;
+}
+
+.about__title {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  align-self: center;
+  padding-top: 10px;
+}
+
+.about__text-p1 {
+  grid-column-start: 4;
+  grid-row-start: 3;
+  padding: 10px 5px 24px 0;
+}
+
+.about__text-p2 {
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+
+.about__text-p1,
+.about__text-p2 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-list-item {
+  display: flex;
+  gap: 48px;
+}
+
+.footer__menu-list {
+  text-align: center;
+  font-size: 18px;
+  padding-right: 22px;
+}
+
+.footer {
+  padding: 0 50px 88px 50px;
+  display: flex;
+  justify-content: space-between;
+}
